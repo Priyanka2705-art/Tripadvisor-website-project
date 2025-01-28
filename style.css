@@ -1,6 +1,6 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 0px;
 
 }
 body{
@@ -12,6 +12,7 @@ body{
     justify-content: space-between;
     margin-bottom: 10px;
     border-bottom: solid black 1px;
+    align-items: center;
 }
 .navbar__s1{
     font-size: larger;
@@ -47,18 +48,23 @@ body{
     border: solid black 1px;
     border-radius: 15px;
     padding: 10px;
+    background-color: black;
+    color: white;
 }
 .search-option {
     text-align: center;
     font-size:x-large;
-    
 }
 .search-option__title{
     display: flex;
     padding: 20px;
     justify-content: space-evenly;
     font-size: x-large;
+    cursor: pointer;
     
+}
+.searchbar input:hover{
+    outline: none;
 }
 .searchbar{
     padding: 10px;
@@ -69,18 +75,20 @@ body{
     margin-left: 20%;
 }
 .searchbar input{
-    border:none 
+    border:none;
+    outline: none;
 
 }
 .searchbar button{
     border: solid black 1px;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 15px;
     margin-left: 60%;
     background-color: #34e0a3;
     color: black;
     font-size: medium;
     margin-inline-end: 5px;
+    border: none;
 }
 .destination{
     margin-top: 30px;
@@ -92,18 +100,21 @@ body{
 .container{
     display: flex;
     gap: 20px;
-    
+    cursor: pointer;
+       
 }
 .container-title{
     width: 20%;
     position:relative
+    
 }
-.container-title img
-{
+
+.container-title img{
     width: 100%;
     margin: 10px;
     
  }
+ 
  .container-text{
     position: absolute;
     top: 40%;
@@ -111,10 +122,16 @@ body{
     font-size: 30px;
     color: white;
  }
+
  .explore-container{
 display: flex;
 gap: 30px;
 justify-content: center;
+cursor: pointer;
+align-items: center;
+flex-basis: 20%;
+flex-grow: 1;
+padding: 10px;
  }
  .explore-title{
     width: 20%;
@@ -125,6 +142,8 @@ justify-content: center;
  .explore-title img{
     width: 100%;
     margin: 10px;
+    align-items:center;
+
  }
 .explore-title p{
     font-size: 25px;
@@ -181,19 +200,35 @@ background-color:black;
     gap: 20px;
     background-color:lightslategray;
     padding: 20px;
+    cursor: pointer;
 }
 .footer-title{
     margin-top: 10%;
-    
+
     }
-    @media  screen and(max-width:800px) {
+
+     .footer__s1 p:hover{
+        color: aliceblue;
+
+    }
+    .footer__s2 p:hover{
+        color: aliceblue;
+    }
+    .footer__s3 p:hover{
+        color: aliceblue;
+
+    }
+
+    @media  screen and (max-width:800px) {
         body{
             font-size: 10px;
         }     
     }
-    @media screen and(max-width:600px) {
+    @media screen and (max-width:600px) {
         .trip-title,.explore-title,.container-title{
-            flex-basis: 25%;
+            flex-basis: 20%;
+            flex-grow: 1;
+
         }
         .navbar__s2,.navbar__s3,.search-option{
             display: none;
